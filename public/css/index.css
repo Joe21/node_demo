@@ -1,0 +1,10 @@
+body {
+	background-color: papayawhip;
+}
+
+#allbooks-container {
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+	border: 1px solid black;
+}

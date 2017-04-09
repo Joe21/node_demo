@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Books App</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+	<h3>Index</h3>
+
+	<div id="allbooks-container">
+	<% for(var i=0;i<data.length;i++) { %>
+		<div>
+			<strong>Title: </strong><%= data[i].title %>
+		</div>
+		<a href="/books/<%= data[i].id %>" >
+			<img src=<%= data[i].imgURL %> />
+		</a>
+		<br>
+		<hr>
+	<% } %>
+	</div>
+	<a href="/books/new">Create a New Book</a>
+</body>
+</html>
